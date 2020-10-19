@@ -6,6 +6,39 @@
  * Only edit this file if you have direct access to it on your server (to fix errors if they happen).
  */
 
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_generatepress_tkm() {
+
+    if ( ! class_exists( 'Appsero\Client' ) ) {
+      require_once __DIR__ . '/appsero/src/Client.php';
+    }
+
+    $client = new Appsero\Client( '47c1358b-a99f-48d5-8d70-c72eee84790f', 'GeneratePress TKM', __FILE__ );
+
+    // Active insights
+    $client->insights()->init();
+
+    // Active automatic updater
+    $client->updater();
+
+    // Active license page and checker
+    $args = array(
+        'type'       => 'options',
+        'menu_title' => 'GeneratePress TKM',
+        'page_title' => 'GeneratePress TKM Settings',
+        'menu_slug'  => 'generatepress_tkm_settings',
+    );
+    $client->license()->add_settings_page( $args );
+
+}
+
+appsero_init_tracker_generatepress_tkm();
+
+
 function generatepress_tkm_enqueue_scripts() {
 	if ( is_rtl() ) {
 		//wp_enqueue_style( 'generatepress-rtl', trailingslashit( get_template_directory_uri() ) . 'rtl.css' );
