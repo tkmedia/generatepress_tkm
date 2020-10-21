@@ -2281,25 +2281,21 @@
                 "param": "post_type",
                 "operator": "!=",
                 "value": "gp_elements"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
             },
             {
-                "param": "page_type",
-                "operator": "==",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "taxonomy",
+                "param": "post_type",
                 "operator": "!=",
-                "value": "all"
+                "value": "wp_block"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "acf-widgets"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "wpcf7r_leads"
             }
         ]
     ],
@@ -2320,5 +2316,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1602226331
+    "modified": 1603210179
 }
