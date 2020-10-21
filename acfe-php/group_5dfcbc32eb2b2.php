@@ -2286,24 +2286,20 @@ acf_add_local_field_group(array(
 				'operator' => '!=',
 				'value' => 'gp_elements',
 			),
-		),
-		array(
 			array(
 				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'page',
-			),
-			array(
-				'param' => 'page_type',
-				'operator' => '==',
-				'value' => 'front_page',
-			),
-		),
-		array(
-			array(
-				'param' => 'taxonomy',
 				'operator' => '!=',
-				'value' => 'all',
+				'value' => 'wp_block',
+			),
+			array(
+				'param' => 'post_type',
+				'operator' => '!=',
+				'value' => 'acf-widgets',
+			),
+			array(
+				'param' => 'post_type',
+				'operator' => '!=',
+				'value' => 'wpcf7r_leads',
 			),
 		),
 	),
@@ -2324,7 +2320,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 1,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1602226331,
+	'modified' => 1603210179,
 ));
 
 endif;
