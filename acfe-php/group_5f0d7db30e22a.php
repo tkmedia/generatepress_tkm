@@ -3243,9 +3243,14 @@ acf_add_local_field_group(array(
 	),
 	'acfe_permissions' => '',
 	'acfe_form' => 0,
-	'acfe_meta' => '',
+	'acfe_meta' => array(
+		'acfcloneindex' => array(
+			'acfe_meta_key' => '',
+			'acfe_meta_value' => '',
+		),
+	),
 	'acfe_note' => '',
-	'modified' => 1602244840,
+	'modified' => 1603536453,
 ));
 
 endif;
