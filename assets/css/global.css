@@ -183,7 +183,7 @@ ul.slick-slider li {list-style-type: none;margin: 0;}
 /* Typography
 -------------------------------------------------------------- */
 body {font-family: 'Assistant', sans-serif !important;color: #292734;line-height: 1.5;font-size: 18px;color: #161922;}
-.wrap, .the_content {max-width: 1320px;padding: 0 10px;margin: 0 auto;}
+.wrap, .the_content {max-width: 1320px;padding: 0 10px;margin: 0 auto !important;}
 .the_content {padding: 40px 10px;}
 
 /* Global
