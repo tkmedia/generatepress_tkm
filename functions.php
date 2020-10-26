@@ -89,7 +89,7 @@ if( ! function_exists( 'tkm_styles' ) )
 		//wp_enqueue_style( 'aos', get_stylesheet_directory_uri() .'/assets/css/aos.css', false );
 		//wp_enqueue_style( 'fancybox', get_stylesheet_directory_uri() .'/assets/css/jquery.fancybox.min.css', false );
 		//wp_enqueue_style( 'elements', get_stylesheet_directory_uri() .'/assets/css/elements.css', false );
-		wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() .'/assets/css/main.css', false );
+		//wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() .'/assets/css/main.css', false );
 
 		if ( class_exists( 'Sitepress', false ) ) { 
 			if ( !is_rtl() ) {		
