@@ -2966,6 +2966,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 .masonary_grid_link.source_product .page_grid_style_simple .product_grid_item_excerpt_more {margin-top: 10px;position: relative;font-size: 20px;}
 .masonary_grid_link.source_product .page_grid_style_simple .product_grid_item_excerpt_more:after {content: '\f177';font-family: 'Font Awesome 5 Pro';text-align: center;margin: auto;color: #fff;font-size: 21px;line-height: 1;margin-right: 10px;font-weight: 300;}
 .masonary_grid_link.source_product .masonary_grid.slider-container .grid-item {padding: 5px;}
+    
+.masonary_grid_link.source_product .grid-item.wc-has-gallery .wc-product-image img.wp-post-image {transition: opacity .1s ease-in-out;}
+.masonary_grid_link.source_product .grid-item.wc-has-gallery .wc-product-image:hover img.wp-post-image {opacity: 0;}
+.masonary_grid_link.source_product .archive_product_item_title.woocommerce-loop-product__title {font-size: 22px;padding-bottom: 5px;}
+.masonary_grid_link.source_product .archive_product_item_price {font-size: 20px;padding-bottom: 5px;}
+.archive_product_item_img.wc-product-image {position: relative;}
 
 @media (min-width: 768px) {
 	.masonary_grid_link.title_on_side.vertical_align.source_manual .masonary_grid_link_title_wrap, 
@@ -5261,6 +5267,7 @@ ul.flex-direction-nav li a:hover {text-decoration: none;}
 .woocommerce div.product p.price ins, .woocommerce div.product span.price ins {text-decoration: none;}
 .archive_product_item_img_wrap a.button {position: absolute;z-index: 3;left: 15px;top: 15px;width: 36px;padding: 0;border-radius: 18px;transition: all .25s;opacity: 1;text-indent: -9999px;height: 36px;line-height: 34px;min-width: 36px;background-color: #fff;border: 1px solid #ddd;color: #333;}
 .archive_product_item_img_wrap a.button:before {width: 100%;text-indent: 0;font-family: 'Font Awesome 5 Pro';font-weight: 300;text-align: center;margin-right: 5px;position: relative;float: left;}
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart.added {background-color: #333;border: 1px solid #ddd;color: #fff;}
 .archive_product_item_img_wrap a.button.product_type_variable.add_to_cart_button:before {content: "\f060";}
 .archive_product_item_img_wrap a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:before {content: "\f290";}
 .archive_product_item_img_wrap:hover {opacity: 1;}
