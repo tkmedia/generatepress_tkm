@@ -149,7 +149,7 @@ endif;
 											<a href="<?php echo esc_url( $link ); ?>" class="woocommerce-LoopProduct-link woocommerce-loop-product__link archive_product_item_back_content_link">
 											<div class="archive_product_item_title_wrap">
 												<?php if( $show_title ) { ?>
-												<div class="archive_product_item_title woocommerce-loop-product__title" style="color:<?php echo $title_color; ?>!important;"><?php the_title(); ?><?php //do_action( 'woocommerce_shop_loop_item_title' ); ?></div>
+												<div class="archive_product_item_title woocommerce-loop-product__title" style="color:<?php echo $title_color; ?>!important;"><?php echo get_the_title( $product->get_id()); ?><?php //do_action( 'woocommerce_shop_loop_item_title' ); ?></div>
 												<?php } ?>
 												<?php if( $show_price ) { ?>
 												<div class="archive_product_item_price" style="color:<?php echo $price_color; ?>!important;"><?php echo woocommerce_template_single_price(); ?><?php //do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
